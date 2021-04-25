@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+
+body {
+	font-family: 'Antonio', sans-serif;
+	font-size: 16px;
+	color: #555;
+	background: #fff;
+	text-align: center;
+	margin: 0;
+}
+
+#wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#top {
+	width: 900px;
+	height: 80px;
+	background: url(../images/bg_menu.png) repeat-x;
+	margin-bottom: 25px;
+}
+
+#menu {
+	height: 80px;
+    display:inline-block;
+	margin: 0 auto;
+}
+
+#menu ul {
+	list-style: none;
+    margin:0 auto!important;
+	height: 80px;
+	padding: 0px 0px 0px 0px;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+	display: block;
+	margin: 10px 15px 10px 15px;
+}
