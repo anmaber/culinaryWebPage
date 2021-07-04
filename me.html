@@ -41,11 +41,12 @@
                 </p> 
                 <h3>Napisz do mnie</h3>
 
-                <form method = POST>
-                  <input type="text" id="femail" name="femail" placeholder="Twój email...">
-                  <textarea name="Text1" id="fmsg" name="fmsg" placeholder="Chcę ci powiedzieć, że..."cols="40" rows="4"></textarea>
-                  <button type="submit">Wyślij</button>
+                <form name="send" action="processMail.php" onsubmit="return validateForm()" method = POST>
+                  <input class = "mailInput" type="text" id="femail" name="femail" placeholder="Twój email...">
+                  <textarea  id="fmsg" name="fmsg" placeholder="Chcę ci powiedzieć, że..."cols="40" rows="4"></textarea>
+                  <button type="submit" id= "submitButton">Wyślij</button>
                 </form>
+                <script src = "skryptMe.js"></script>
                 </div>
             </div>
         </div>

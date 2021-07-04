@@ -209,20 +209,22 @@
             <h1>Oblicz swoje zapotrzebowanie kaloryczne!</h1>
         </div>
             <div class="funFactBody">
-                <form>
+                <form name="send" action="processKcal.php" method = GET>
                     <p>Jakiej jesteś płci?</p>
 
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Mężczyzna</label><br>
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Kobieta</label><br>
-                    <p>Ile ważysz?</p>
-                    <input type="text" placeholder="waga w kg">
-                    <p>Ile masz wzrostu?</p>
-                    <input type="text" placeholder="wzrost w cm">
-
+                    <label for="weigth">Ile aktualnie ważysz?</label>
+                    <input class="kcalInput" type="text" name="weigth" placeholder="waga w kg" maxlength="4"><br>
+                    <label for="heigth">Ile masz wzrostu?</label>
+                    <input class="kcalInput" type="text" name="heigth" placeholder="wzrost w cm"><br>
+                    <label for="age">Ile masz lat?</label>
+                    <input class="kcalInput" type="text" name="age" placeholder="wiek w latch"><br>
+                    <br>
                     <label for="aktywnosc">Jaka jest twoja aktywność fizyczna?</label>
-
+                    <br>
                     <select name="aktywnosc" id="aktywnosc">
                         <option value="0">Wybierz rodzaj aktywności fizycznej</option>
                         <option value="1">Znikoma(brak ćwiczeń, praca siedząca, szkoła)</option>
@@ -233,16 +235,19 @@
                         <option value="5">Bardzo duża(przynajmniej 4 ciężkie treningi w tygodniu, praca fizyczna)
                         </option>
                     </select>
+                    <br>
 
                     <label for="cel">Jaka jest twój cel?</label>
+                    <br>
                     <select name="cel" id="cel">
                         <option value="0">Wybierz swój cel</option>
                         <option value="1">Przybranie masy</option>
                         <option value="2">Zachowanie masy ciała</option>
                         <option value="3">Redukcja masy ciała</option>
-                        <option value="4">Rekompozcja ciała</option>
                     </select>
+                    <br>
                     <button type="submit">Oblicz</button>
+                    
                 </form>
             </div>
         </div>

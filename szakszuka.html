@@ -39,27 +39,31 @@
                 <div id="checkboxes">
                     <h2>Składniki</h2>
                     <ul>
-                      <li><input type="checkbox"> dwa pomidory malinowe</li>
-                      <li><input type="checkbox"> papryka</li>
-                      <li><input type="checkbox"> szalotka</li>
-                      <li><input type="checkbox"> dwa jajka</li>
-                      <li><input type="checkbox"> sól</li>
-                      <li><input type="checkbox"> pieprz</li>
-                      <li><input type="checkbox"> kumin</li>
-                      <li><input type="checkbox"> kolendra</li>
-                      <li><input type="checkbox"> oliwa</li>
+                      <li class="eng"><input type="checkbox"> dwa pomidory malinowe</li>
+                      <li class="eng"><input type="checkbox"> papryka</li>
+                      <li class="eng"><input type="checkbox"> szalotka</li>
+                      <li class="eng"><input type="checkbox"> dwa jajka</li>
+                      <li class="eng"><input type="checkbox"> sól</li>
+                      <li class="eng"><input type="checkbox"> pieprz</li>
+                      <li class="eng"><input type="checkbox"> kumin</li>
+                      <li class="eng"><input type="checkbox"> kolendra</li>
+                      <li class="eng"><input type="checkbox"> oliwa</li>
                     </ul>
                 </div>
                 
                 <div id = "preparation">
                     <h2>Przygotowanie</h2>
                     <ol>
-                        <li>Posiekaj szalotkę, pomidory i paprykę pokrój w kostę.</li>
-                        <li>Rozgrzej na patelni oliwę z oliwek.</li>
-                        <li>Podsmaż cebulkę aż się zeszkli a następnie dodaj pokrojoną paprykę i pomidoty oraz przyprawy. Podduś chwilę na patelni a następnie wbij jajka i przykryj patelnię pokrywką. Jak zauważysz że jajko się ścięło, szakszuka jest gotowa.</li>
-                        <li>Najlpiej jest podawać ze świeżym pieczywem i skropione odrobiną soku z limonki.</li>
+                        <li class="prep">Posiekaj szalotkę, pomidory i paprykę pokrój w kostę.</li>
+                        <li class="prep">Rozgrzej na patelni oliwę z oliwek.</li>
+                        <li class="prep">Podsmaż cebulkę aż się zeszkli a następnie dodaj pokrojoną paprykę i pomidoty oraz przyprawy. Podduś chwilę na patelni a następnie wbij jajka i przykryj patelnię pokrywką. Jak zauważysz że jajko się ścięło, szakszuka jest gotowa.</li>
+                        <li class="prep">Najlpiej jest podawać ze świeżym pieczywem i skropione odrobiną soku z limonki.</li>
                     </ol>
                 </div>
             </div>
+            <form action="processPdf.php" method="POST">
+                <input name="recipe" value="szakszuka" style="display:none">
+                <button type="submit">Pobierz przepis</button>
+            </form>
     </body>
 </html>

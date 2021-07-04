@@ -34,7 +34,6 @@ input[type=text] {
     font-family: 'Antonio', sans-serif;
     padding: 12px 20px;
     margin: 8px 0;
-    width: 65%;
   }
 
 textarea{
@@ -67,4 +66,12 @@ form{
 
 .active{
     display: inline;
+}
+
+.kcalInput{
+    width: 10%;
+}
+
+.mailInput{
+    width: 65%;
 }

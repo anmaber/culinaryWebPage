@@ -38,14 +38,14 @@
                 <div id="checkboxes">
                     <h2>Składniki</h2>
                     <ul>
-                      <li><input type="checkbox"> szklanka kaszy gryczanej palonej</li>
-                      <li><input type="checkbox"> szklanka brązowej soczewicy</li>
-                      <li><input type="checkbox"> szalotka</li>
-                      <li><input type="checkbox"> sól</li>
-                      <li><input type="checkbox"> pieprz</li>
-                      <li><input type="checkbox"> papryka wędzona</li>
-                      <li><input type="checkbox"> czosnek suszony</li>
-                      <li><input type="checkbox"> cebula suszona</li>
+                      <li class="eng"><input type="checkbox"> szklanka kaszy gryczanej palonej</li>
+                      <li class="eng"><input type="checkbox"> szklanka brązowej soczewicy</li>
+                      <li class="eng"><input type="checkbox"> szalotka</li>
+                      <li class="eng"><input type="checkbox"> sól</li>
+                      <li class="eng"><input type="checkbox"> pieprz</li>
+                      <li class="eng"><input type="checkbox"> papryka wędzona</li>
+                      <li class="eng"><input type="checkbox"> czosnek suszony</li>
+                      <li class="eng"><input type="checkbox"> cebula suszona</li>
                     </ul>
                 </div>
                 
@@ -56,5 +56,9 @@
                     </p>
                 </div>
             </div>
+            <form action="processPdf.php" method="POST">
+                <input name="recipe" value="klopsy" style="display:none">
+                <button type="submit">Pobierz przepis</button>
+            </form>
     </body>
 </html>
