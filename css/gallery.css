@@ -1,25 +1,42 @@
-.gallery {
-    margin: 1%;
-    position: relative;
-    display: inline-block;
-    width: 31%;
-  }
-  
-.gallery .img-bot {
-    width: 100%;
-    height: auto;
-  }
+/* .gallery {
+  margin: 1%;
+  position: relative;
+  display: inline-block;
+  width: 31%;
+}
 
-.gallery .img-top {
-    width: 100%;
-    height: auto;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+.img-bot {
+  width: 100%;
+  height: auto;
+}
+
+.img-top {
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 .gallery:hover .img-top {
-    display: inline;
+  display: inline;
 }
+
+.dish{
+  content: url(../images/szakszuka.png);
+  width: 100%;
+  height: 100%;
+} */
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+#gallery div {
+  margin: 3%;
+}
+

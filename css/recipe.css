@@ -22,8 +22,9 @@ h3{
 #preparation {
     float: left;
 }
-#preparation p{
+#preparation li{
     text-align: justify;
+    margin-bottom: 1%;
 }
 
 .bind{
